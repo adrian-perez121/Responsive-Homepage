@@ -25,6 +25,10 @@ header {
   max-height: 800px;
 }
 
+main {
+  padding: 10px 20px;
+}
+
 /* .profile  {
   width: 100%;
   min-width: 250px;
@@ -77,6 +81,56 @@ header {
   gap: 10px;
 }
 
+.work-heading {
+  font-family: "PlayFair", sans-serif;
+}
+
+.title-and-buttons h2 {
+  font-family: "PlayFair", sans-serif;
+}
+
+.project-cards {
+  padding: 10px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  gap: 40px 30px;
+}
+
+.card {
+  min-width: 325px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+
+.card img {
+height: 175px;
+ width: 100%;
+ object-fit: center;
+ object-fit: cover;
+ border-top-left-radius: inherit;
+ border-top-right-radius: inherit;
+}
+
+.card-desc {
+  padding: 0 20px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.title-and-buttons {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-buttons img {
+  height: 30px;
+  width: auto;
+}
 @media screen and (max-width: 500px) { /* The same as saying when the screen is less than 500px wide*/
   header {
     display: flex;
