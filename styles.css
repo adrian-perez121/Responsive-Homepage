@@ -1,0 +1,59 @@
+/* Prevent default padding and margins from getting in the way */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(./assets/fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'PlayFair';
+  src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #0891B2;
+  box-shadow: 5px -1px 5px 1px black;
+  padding: 10px 15px;
+  max-height: 800px;
+}
+
+.profile  {
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.about-me {
+  padding: 20px 30px;
+  box-shadow: 5px -1px 5px 1px black;
+  background-color: white;
+  max-height: 800px;
+  max-width: 650px;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description{
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-me .title {
+  font-family: "PlayFair", sans-serif;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 30px;
+  gap: 10px;
+}
+
