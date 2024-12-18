@@ -22,7 +22,6 @@ header {
   background-color: #0891B2;
   box-shadow: 5px -1px 5px 1px black;
   padding: 10px 15px;
-  max-height: 800px;
 }
 
 main {
@@ -68,6 +67,8 @@ main {
 
 .description{
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  text-overflow:clip;
 }
 
 .about-me .title {
@@ -134,8 +135,9 @@ height: 175px;
 @media screen and (max-width: 500px) { /* The same as saying when the screen is less than 500px wide*/
   header {
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    overflow: scroll;
+    box-shadow: none;
   }
 }
 
