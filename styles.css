@@ -16,6 +16,7 @@
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: #0891B2;
@@ -24,9 +25,28 @@ header {
   max-height: 800px;
 }
 
-.profile  {
-  max-height: 700px;
+/* .profile  {
+  width: 100%;
+  min-width: 250px;
+  max-width: 400px;
+  height: auto;
   object-fit: contain;
+} */
+
+.name {
+  color: white;
+  font-size: xx-large;
+  min-width: 300px;
+  min-height: max(200px, 80vh);
+  background-image: url("./assets/stock-photos/person-studying.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .about-me {
