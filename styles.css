@@ -37,7 +37,7 @@ header {
   color: white;
   font-size: xx-large;
   min-width: 300px;
-  min-height: max(200px, 80vh);
+  min-height: max(200px, 70vh);
   background-image: url("./assets/stock-photos/person-studying.jpg");
   background-position: center;
   background-size: cover;
@@ -75,5 +75,13 @@ header {
   flex-direction: row-reverse;
   height: 30px;
   gap: 10px;
+}
+
+@media screen and (max-width: 500px) { /* The same as saying when the screen is less than 500px wide*/
+  header {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
 }
 
