@@ -139,5 +139,13 @@ height: 175px;
     flex-direction: column;
     box-shadow: none;
   }
+
+  main {
+    padding: 5px 10px;
+  }
+
+  .project-cards {
+    padding: 10px 10px;
+  }
 }
 
