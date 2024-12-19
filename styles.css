@@ -28,6 +28,17 @@ main {
   padding: 10px 20px;
 }
 
+footer {
+  padding: 40px 50px;
+  background-color: #0891B2;
+  color: white;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
 /* .profile  {
   width: 100%;
   min-width: 250px;
@@ -77,8 +88,12 @@ main {
 
 .icons {
   display: flex;
-  flex-direction: row-reverse;
   height: 30px;
+  flex-direction: row;
+}
+
+header .icons {
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -132,6 +147,45 @@ height: 175px;
   height: 30px;
   width: auto;
 }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.contacts h1 {
+  font-family: 'PlayFair', sans-serif;
+}
+
+.contacts div {
+  font-family: 'Poppins', sans-serif;
+}
+.phone-num, .email {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone-num img, .email img {
+  filter: invert(1);
+  height: 20px;
+}
+
+.working-img {
+  min-width: 50px;
+  max-width: 500px;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+}
+
+footer .icons {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
 @media screen and (max-width: 500px) { /* The same as saying when the screen is less than 500px wide*/
   header {
     display: flex;
@@ -146,6 +200,10 @@ height: 175px;
 
   .project-cards {
     padding: 10px 10px;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
 
